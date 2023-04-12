@@ -9,150 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
-  h3, h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
-    font-size: 20px;
-    color: #111;
-  }
-  .container {
-    padding: 80px 120px;
-  }
-  .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    min-height: 120px;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-    font-size: 12px;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }
-  #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }  
-  .navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -171,17 +28,8 @@
         <li><a href="#myPage">NỘI DUNG CHÍNH</a></li>
         <li><a href="#band">GIỚI THIỆU</a></li>
         <li><a href="#tour">WEB ĐẶT TOUR</a></li>
-        <li><a href="#contact">LIÊN LẠC</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">TRAO ĐỔI</a></li>
-            <li><a href="#">BỔ SUNG</a></li>
-            <li><a href="#">ĐA PHƯƠNG TIỆN</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a href="#contact">LIÊN HỆ</a></li>
+        <li><a href="#map">ĐỊA CHỈ</a></li>
       </ul>
     </div>
   </div>
@@ -260,15 +108,19 @@
           <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/9/97f3e7a54e9c6987283b78e016664776.svg" width="400" height="300">
           <p><strong>Traveloka</strong></p>
           <p>Giá phòng & vé máy bay rẻ nhất</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Truy cập ngay</button>
-        </div>
+          <a href="https://www.traveloka.com" target="_blank">
+            <button class="btn" data-toggle="modal" data-target="#myModal">Truy cập ngay</button>
+          </a> 
+           </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="https://travel.com.vn/Content/Theme/images/logo.png" width="400" height="300">
           <p><strong>Viettravel</strong></p>
           <p>Đặt tour giá rẻ - Thanh toán linh hoạt uy tín</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Truy cập ngay</button>
+          <a href="https://travel.com.vn" target="_blank">
+            <button class="btn" data-toggle="modal" data-target="#myModal">Truy cập ngay</button>
+          <a>
         </div>
       </div>
       <div class="col-sm-4">
@@ -276,17 +128,18 @@
           <img src="https://vietjets.com.vn/userupload/hinhanh/vietjetbookingw.png" width="400" height="300">
           <p><strong>Vietjet</strong></p>
           <p>Đặt Vé Máy Bay Online - Nhiều Ưu Đãi Bất Ngờ</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Truy cập ngay</button>
+          <a href="https://vietjets.com.vn"  target="_blank">
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Truy cập ngay</button>
+          </a>
         </div>
       </div>
     </div>
   </div>
   
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <!-- <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
@@ -315,72 +168,72 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div> 
+</div> -->
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <h3 class="text-center">Liên hệ</h3>
+  <p class="text-center"><em>Tận hưởng phút giây du lịch cùng gia đình</em></p>
 
   <div class="row">
     <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p>Tư vấn? Liên lạc ngay!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Đà Lạt, Lâm Đồng</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Số điện thoại +00 1212151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
     </div>
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Họ tên" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Phản hồi của bạn" rows="5"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+          <button class="btn pull-right" type="submit">Gửi</button>
         </div>
       </div>
     </div>
   </div>
   <br>
-  <h3 class="text-center">From The Blog</h3>  
+  <h3 class="text-center">Lời phản hồi</h3>  
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Thái Gõ</a></li>
+    <li><a data-toggle="tab" href="#menu1">Hoàng Huy</a></li>
+    <li><a data-toggle="tab" href="#menu2">Shi Phơ</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h2>Mike Ross, Manager</h2>
-      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <h2>Thái Gõ, Thành viên GoodWeb</h2>
+      <p>Ấm người, ấm cả lòng nếu như đi cùng người iuuu</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h2>Chandler Bing, Guitarist</h2>
-      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+      <h2>Hoàng Huy, Thành viên GoodWeb</h2>
+      <p>Làm ơn đừng úp lên nữa tui hết tiền rồi 🥺🥺</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h2>Peter Griffin, Bass player</h2>
-      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+      <h2>Shi Phơ, Ăn nhờ ở đậu</h2>
+      <p>Mãi yêu Đà Lạt 😍</p>
     </div>
   </div>
 </div>
 
 <!-- Image of location/map -->
-<img src="map.jpg" class="img-responsive" style="width:100%">
+<img id="map" src="https://www.google.com/maps/vt/data=MX1mqQCc8XvmFRlqOqmJ4jKuq1FZKrNZ7-yIGKutL78Y_1Rgy6GKOhNZzYFsr9KNIDDv3DLgyERXWZQ6ugYnbDVc__DgqHWlMj1-F2wUo0TZhuScsi7isMhVpkDqMnXlX_6bara8IqFT0m-EJf5bMPKQDJyrAWd3JCzJ8YVtGTGtm7Ga_jB4-h3FijaFUZDnyxYbJ2spIN0MmsuvJpvQYEOU6rD6WaFi-clK3dglplvnkFSIXx1n4BrQ_05I-McAww" class="img-responsive" style="width:100%">
 
 <!-- Footer -->
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+  <p>Kham khảo từ Bootstrap <a href="https://www.w3schools.com" target="_blank" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
 </footer>
 
 <script>
